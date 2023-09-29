@@ -20,13 +20,13 @@ const Navber = () => {
       <li><Link className='text-xl font-medium' to="/about">About</Link></li>
      <li>
      {
-     user?.uid ? <li><button onClick={handlelogout} className='btn btn-sm'>LogOut</button></li>
+     user?.uid ? <li><button onClick={handlelogout} className='btn btn-sm bg-yellow-300' >LogOut</button></li>
      :
-     <li><Link className='text-xl font-medium' to="/singin"><button className='btn btn-sm'>LogIn</button> </Link></li>
+     <li><Link className='text-xl font-medium' to="/singin"><button className='btn btn-sm bg-yellow-300'>LogIn</button> </Link></li>
      }
      </li>
      <li>
-      <img src={user?.photoURL} alt="" />
+      <img className='rounded-full w-24' src={user?.photoURL} alt="" />
      </li>
     </ul>
   </div>

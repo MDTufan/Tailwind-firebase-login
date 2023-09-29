@@ -15,6 +15,7 @@ const Googleprovider = new GoogleAuthProvider();
 const UserContext = ({children}) => {
   const [user,setuser]=useState(null);
   const [loading,setloding]=useState(true);
+  
   const opensingin=(email,password)=>{
   
     return signInWithEmailAndPassword(auth,email,password)

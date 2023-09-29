@@ -1,3 +1,49 @@
-body {
-    background-color: aquamarine !important;
+.hero{
+  background-color: rgb(20, 20, 63);
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 50px;
 }
+
+.btn-1 {
+    background-color:rgb(106, 239, 206) !important ;
+   box-shadow: -1px 1px 12px #0ef;
+   padding: 6px 12px;
+   transition: 0.5s;
+   border-radius: 5px;
+  }
+  .btn-1:hover{
+    box-shadow: 0px 0px 5px cyan,0px 0px 30px cyan,0px 0px 30px cyan,0px 0px 200px cyan;
+  }
+  .left-div, .right-div {
+    flex: 1;
+    padding: 20px;
+    /* text-align: center; */
+  }
+  
+  .image-div {
+    flex: 1;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  .img1-size1{
+    width: 300px !important;
+    border-radius: 50%;
+    background-color: rgb(24, 10, 55);
+   }
+   .xx-12 {
+    background-color: #0ef;
+   
+    border-radius: 50%;
+    /* margin-left: 15px; */
+    overflow: hidden;
+    border: 6px solid rgb(69, 228, 188);
+    box-shadow: 4px 8px 36px #0ef;
+    transition: 1s;
+  }
+  .xx-12:hover{
+   
+    box-shadow: 0px 0px 5px cyan,0px 0px 12px cyan,0px 0px 10px cyan,0px 0px 100px cyan;
+      
+  } 
