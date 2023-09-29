@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../Context/UserContext';
 
 const Navber = () => {
-  const {name} = useContext(AuthContext);
+  const {user,Logout} = useContext(AuthContext);
+  const handlelogout=()=>{
+        Logout()
+  }
   return (
     <div className='bg-indigo-400 '>
       <div className=" shadow-2xl navbar ">
@@ -14,8 +17,16 @@ const Navber = () => {
     <ul className="menu menu-horizontal px-1">
       <li><Link className='text-xl font-medium ' to='/singup'>SignUp</Link></li>
       <li><Link className='text-xl font-medium' to="/singin">SignIn</Link></li>
+      <li><Link className='text-xl font-medium' to="/about">About</Link></li>
      <li>
-      <h3>{name}</h3>
+     {
+     user?.uid ? <li><button onClick={handlelogout} className='btn btn-sm'>LogOut</button></li>
+     :
+     <li><Link className='text-xl font-medium' to="/singin"><button className='btn btn-sm'>LogIn</button> </Link></li>
+     }
+     </li>
+     <li>
+      <img src={user?.photoURL} alt="" />
      </li>
     </ul>
   </div>
