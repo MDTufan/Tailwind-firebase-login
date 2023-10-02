@@ -17,7 +17,9 @@ const About = () => {
     <div className="xx-12">
     <img src={img} className="max-w-sm rounded-lg shadow-2xl img-size1" />
     </div>
+    
   </div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus neque officiis necessitatibus vitae, sequi earum qui reprehenderit inventore harum? Voluptas numquam, error omnis saepe quos porro sint ullam beatae incidunt.</p>
 </div>
     </div>
   );
